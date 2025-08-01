@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="477.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chat_with_cryptage.Chat_ServerController">
+   <children>
+      <TextArea fx:id="txt_server_area" layoutX="31.0" layoutY="59.0" prefHeight="225.0" prefWidth="425.0" />
+      <TextField fx:id="txt_server_field" layoutX="31.0" layoutY="441.0" prefHeight="40.0" prefWidth="425.0" />
+      <JFXButton fx:id="btn_sendd" layoutX="313.0" layoutY="525.0" onAction="#Send_Message" prefHeight="47.0" prefWidth="113.0" text="Send" />
+   </children>
+</AnchorPane>
