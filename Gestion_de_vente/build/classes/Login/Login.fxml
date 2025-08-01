@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="1017.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="memoire_fin.Login">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="582.0" fitWidth="1017.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <VBox fx:id="pane1" alignment="CENTER" cache="true" layoutX="448.0" layoutY="53.0" prefHeight="494.0" prefWidth="505.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="545.0" AnchorPane.rightAnchor="64.0" AnchorPane.topAnchor="53.0">
+         <children>
+            <Label prefHeight="70.0" prefWidth="202.0" text="Login In" translateX="3.0" translateY="-40.0">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="42.0" />
+               </padding>
+               <font>
+                  <Font name="Bauhaus 93" size="36.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#7ebea5" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" translateX="-190.0" translateY="-8.0">
+               <image>
+                  <Image url="@../memoire_fin/Image/user1.png" />
+               </image>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ImageView>
+            <JFXTextField fx:id="user1" alignment="BASELINE_LEFT" focusColor="#7ebea5" labelFloat="true" prefHeight="40.0" prefWidth="200.0" promptText="Your Name " translateY="-99.0">
+               <VBox.margin>
+                  <Insets left="30.0" right="15.0" top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </JFXTextField>
+            <JFXPasswordField fx:id="pass1" alignment="BASELINE_LEFT" focusColor="#7ebea5" labelFloat="true" prefHeight="40.0" prefWidth="200.0" promptText="Your Password">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="30.0" right="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </JFXPasswordField>
+            <ImageView fitHeight="35.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" translateX="-190.0" translateY="-47.0" VBox.vgrow="ALWAYS">
+               <image>
+                  <Image url="@../memoire_fin/Image/password1.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <JFXButton fx:id="btn1" buttonType="RAISED" onAction="#Login" prefHeight="48.0" prefWidth="277.0" text="Sign IN" textAlignment="CENTER" textFill="WHITE" translateY="-28.0" underline="true">
+               <font>
+                  <Font name="Book Antiqua" size="20.0" />
+               </font></JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#close" prefHeight="31.0" prefWidth="130.0" text="Cancel " />
+            <Label fx:id="label1" alignment="CENTER" prefHeight="27.0" prefWidth="220.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#575757" />
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>

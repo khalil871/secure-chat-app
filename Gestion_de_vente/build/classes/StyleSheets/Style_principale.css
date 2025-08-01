@@ -1,0 +1,14 @@
+.Background{
+    -fx-background-color: #ffffff;
+}
+.Label:hover{
+   -fx-text-fill: #b2bec3;
+   -fx-opacity: 1;
+   -fx-cursor: hand;
+}
+.pane_bas{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #232526, #414345);
+}
+.pane:hover{
+    -fx-cursor: hand;
+}

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="820.0" prefWidth="1179.0" styleClass="root" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="memoire_fin.Client_1">
+   <children>
+      <JFXTextField fx:id="NOM" focusColor="#ec2bd3" labelFloat="true" layoutX="455.0" layoutY="205.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="240.0" promptText="Nom ">
+         <font>
+            <Font name="Bodoni MT Bold" size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="PRENOM" focusColor="#ec2bd3" labelFloat="true" layoutX="736.0" layoutY="205.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="240.0" promptText="Prénom ">
+         <font>
+            <Font name="Bodoni MT Bold" size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="ADRESSE" focusColor="#ec2bd3" labelFloat="true" layoutX="453.0" layoutY="315.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="532.0" promptText="Adresse ">
+         <font>
+            <Font name="Bodoni MT Bold" size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="TELEPHONE" focusColor="#ec2bd3" labelFloat="true" layoutX="453.0" layoutY="425.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="532.0" promptText="Télephone">
+         <font>
+            <Font name="Bodoni MT Bold" size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="VILLE" focusColor="#ec2bd3" labelFloat="true" layoutX="453.0" layoutY="535.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="532.0" promptText="Ville ">
+         <font>
+            <Font name="Bodoni MT Bold" size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="NUM" focusColor="#ec2bd3" labelFloat="true" layoutX="453.0" layoutY="645.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="532.0" promptText="Numéro" styleClass="edittext">
+         <font>
+            <Font name="Bodoni MT Bold" size="22.0" />
+         </font>
+      </JFXTextField>
+      <Pane layoutX="7.0" layoutY="14.0" prefHeight="820.0" prefWidth="379.0" styleClass="Pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="800.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <StackPane fx:id="MENU" layoutX="160.0" layoutY="97.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="65.0" styleClass="Barremenu">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_menu_96px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <StackPane fx:id="MINUS" layoutX="160.0" layoutY="97.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="65.0" styleClass="Barremenu">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_minus_96px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <VBox fx:id="Vbox_panel" layoutY="310.0" prefHeight="342.0" prefWidth="379.0" style="-fx-background-color: transparent;">
+               <children>
+                  <Button fx:id="Accueil" focusTraversable="false" mnemonicParsing="false" prefHeight="85.0" prefWidth="307.0" styleClass="Button" text="Accueil" textFill="WHITE">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="-70.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="Vente" focusTraversable="false" mnemonicParsing="false" prefHeight="85.0" prefWidth="307.0" styleClass="Button" text="Vente" textFill="WHITE">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="-70.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="Stock" focusTraversable="false" mnemonicParsing="false" prefHeight="85.0" prefWidth="307.0" styleClass="Button" text="Stock" textFill="WHITE">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="-70.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="Statistique" focusTraversable="false" mnemonicParsing="false" prefHeight="85.0" prefWidth="307.0" styleClass="Button" text="Statistique" textFill="WHITE">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="-31.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="591.0" layoutY="59.0" prefHeight="53.0" prefWidth="307.0" text="Nouveau Client " textFill="#ec2bd3">
+         <font>
+            <Font name="Bell MT Bold" size="36.0" />
+         </font>
+      </Label>
+      <StackPane fx:id="Insert" layoutX="1033.0" layoutY="697.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="75.0" styleClass="ButtonEffect">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Photo/icons8_plus_filled_100px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <StackPane fx:id="Update" layoutX="1033.0" layoutY="697.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="75.0" styleClass="ButtonEffect" visible="false">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Photo/icons8_recurring_appointment_104px_2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <StackPane fx:id="Delete" layoutX="1033.0" layoutY="697.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="75.0" styleClass="ButtonEffect" visible="false">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Photo/icons8_cancel_filled_100px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <JFXComboBox fx:id="Choix" focusTraversable="false" layoutX="675.0" layoutY="719.0" prefHeight="40.0" prefWidth="240.0" />
+      <StackPane fx:id="Visible" layoutX="920.0" layoutY="637.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="65.0" styleClass="ButtonEffect" visible="false">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Photo/icons8_visible_100px_2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <StackPane fx:id="Invisible" layoutX="920.0" layoutY="637.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="65.0" styleClass="ButtonEffect" visible="false">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Photo/icons8_invisible_100px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

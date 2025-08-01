@@ -1,0 +1,14 @@
+.BarreExit:hover{
+    -fx-background-color: #EA2027;
+}
+.PANE{
+    -fx-border-color: #ff7675;
+    -fx-border-width: 0  1 1 0;
+    -fx-border-radius: 0 0 80 80;
+    -fx-background-radius:  0 0 80 80;
+}
+.PANE2{
+    
+     -fx-border-color: #ff7675;
+   -fx-border-width: 1.5;
+}

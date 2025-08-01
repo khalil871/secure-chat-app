@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="881.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="memoire_fin.Recherche">
+   <children>
+      <AnchorPane fx:id="anchor1" layoutY="77.0" prefHeight="530.0" prefWidth="881.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="77.0">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="881.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1287.0" prefWidth="879.0">
+                     <children>
+                        <JFXComboBox fx:id="brand" layoutX="68.0" layoutY="71.0" prefHeight="42.0" prefWidth="435.0" promptText="BRAND :">
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </JFXComboBox>
+                        <Pane layoutX="30.0" layoutY="155.0" prefHeight="114.0" prefWidth="818.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Price : ">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="label" layoutX="264.0" layoutY="31.0" prefHeight="65.0" prefWidth="364.0" style="-fx-background-color: gray;" />
+                           </children>
+                        </Pane>
+                        <JFXComboBox fx:id="network" layoutX="30.0" layoutY="390.0" prefHeight="42.0" prefWidth="372.0" promptText="2G/3G/4G/5G">
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </JFXComboBox>
+                        <JFXComboBox fx:id="size" labelFloat="true" layoutX="30.0" layoutY="537.0" prefHeight="42.0" prefWidth="372.0" promptText="SIZE :">
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </JFXComboBox>
+                        <JFXComboBox fx:id="multiple" layoutX="460.0" layoutY="537.0" prefHeight="42.0" prefWidth="372.0" promptText="MULTIPLE:">
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </JFXComboBox>
+                        <Label layoutX="20.0" layoutY="332.0" prefHeight="51.0" prefWidth="265.0" text="NETWORK :" textFill="RED">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="489.0" prefHeight="51.0" prefWidth="265.0" text="SIM :" textFill="RED">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="624.0" prefHeight="51.0" prefWidth="265.0" text="Platform :" textFill="RED">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXComboBox fx:id="os" layoutX="30.0" layoutY="672.0" prefHeight="42.0" prefWidth="372.0" promptText="OS:" />
+                        <Label layoutX="20.0" layoutY="799.0" prefHeight="51.0" prefWidth="265.0" text="Memory :" textFill="RED">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXComboBox fx:id="ram" layoutX="30.0" layoutY="847.0" prefHeight="42.0" prefWidth="372.0" promptText="RAM:" />
+                        <Label layoutX="20.0" layoutY="897.0" prefHeight="51.0" prefWidth="265.0" text="DISPLAY :" textFill="RED">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXComboBox fx:id="nfc" layoutX="30.0" layoutY="945.0" prefHeight="42.0" prefWidth="372.0" promptText="NFC:" />
+                        <JFXComboBox fx:id="notch" layoutX="460.0" layoutY="945.0" prefHeight="42.0" prefWidth="372.0" promptText="NOTCH:" />
+                        <JFXTextField fx:id="rcamera" labelFloat="true" layoutX="30.0" layoutY="1050.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="372.0" promptText="Rear Caméra :" />
+                        <JFXTextField fx:id="selfie" labelFloat="true" layoutX="460.0" layoutY="1050.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="372.0" promptText="Selfie caméra :" />
+                        <Label layoutX="20.0" layoutY="995.0" prefHeight="51.0" prefWidth="265.0" text="Main camera " textFill="RED">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXCheckBox layoutX="100.0" layoutY="1123.0" text="You&quot;re Confirmed " />
+                        <JFXButton fx:id="refuse" layoutX="450.0" layoutY="1193.0" prefHeight="45.0" prefWidth="161.0" text="Refuse" />
+                        <JFXButton fx:id="go" buttonType="RAISED" layoutX="700.0" layoutY="1193.0" prefHeight="45.0" prefWidth="99.0" text="GO" />
+                        <Separator layoutX="153.0" layoutY="780.0" prefHeight="0.0" prefWidth="652.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="797.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#Exit" prefHeight="50.0" prefWidth="70.0" styleClass="BarreExit">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Photo/icons8_delete_sign_96px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="anchor2" layoutY="76.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="881.0" visible="false">
+         <children>
+            <TableView fx:id="table" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="881.0">
+              <columns>
+                <TableColumn fx:id="Clmn1" prefWidth="100.0" text="ID" />
+                <TableColumn fx:id="Clmn2" prefWidth="129.0" text="NAME" />
+                  <TableColumn fx:id="Clmn3" prefWidth="150.0" text="PRIX" />
+                  <TableColumn fx:id="Clmn4" prefWidth="100.0" text="TECHNOLOGIE" />
+                  <TableColumn fx:id="Clmn5" prefWidth="129.0" text="SIZE" />
+                  <TableColumn fx:id="Clmn6" prefWidth="150.0" text="MULTIPLE" />
+                  <TableColumn fx:id="Clmn7" prefWidth="100.0" text="OS" />
+                  <TableColumn fx:id="Clmn8" prefWidth="129.0" text="RAM" />
+                  <TableColumn fx:id="Clmn9" prefWidth="150.0" text="NFC" />
+                  <TableColumn fx:id="Clmn10" prefWidth="100.0" text="NOTCH" />
+                  <TableColumn fx:id="Clmn11" prefWidth="129.0" text="Rear caméra" />
+                  <TableColumn fx:id="Clmn12" prefWidth="150.0" text="Selfie Caméra" />
+                  <TableColumn fx:id="Clmn13" prefWidth="150.0" text="QUANTITE" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

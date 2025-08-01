@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor2" blendMode="MULTIPLY" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1490.0" styleClass="Background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="memoire_fin.Fenetre_principale">
+   <children>
+      <Separator layoutX="284.0" layoutY="261.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="1054.0" />
+      <Label layoutX="218.0" layoutY="103.0" prefHeight="41.0" prefWidth="388.0" />
+      <Pane fx:id="Panel_02" layoutX="1240.0" layoutY="-310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="250.0" style="-fx-background-color: TRANSPARENT;" styleClass="pane">
+         <children>
+            <ImageView fitHeight="234.0" fitWidth="250.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Image/G10234-ST.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="234.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="250.0" style="-fx-background-color: #bcc5d5;" text="Gestion de Modifier" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="Panel_03" layoutX="1240.0" layoutY="-310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="250.0" style="-fx-background-color: TRANSPARENT;" styleClass="pane">
+         <children>
+            <ImageView fitHeight="234.0" fitWidth="250.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Image/graphicstock-man-use-smartphone-handtouch-screenproject-manager-researching-processglobal-strategy-virtual-iconinnovation-graphs-interfaceanalyze-market-stock_rOgxKjswgse_SB_PM.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="234.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="250.0" style="-fx-background-color: #cce1e9;" text="Gestion de Stock" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="Panel_01" layoutX="1240.0" layoutY="-310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="250.0" style="-fx-background-color: TRANSPARENT;" styleClass="pane">
+         <children>
+            <ImageView fitHeight="234.0" fitWidth="250.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Image/vente2.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="234.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="250.0" style="-fx-background-color: #999999;" text="Gestion de Vente" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="Panel_04" layoutX="1240.0" layoutY="-310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="250.0" style="-fx-background-color: TRANSPARENT;" styleClass="pane">
+         <children>
+            <ImageView fitHeight="234.0" fitWidth="250.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Image/8375348-homme-avec-la-loupe-recherchant-des-pièces.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="234.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="250.0" style="-fx-background-color: #eeeeee;" text="Recherche  " textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="Panel_05" layoutX="1240.0" layoutY="-310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="250.0" style="-fx-background-color: TRANSPARENT;" styleClass="pane">
+         <children>
+            <ImageView fitHeight="234.0" fitWidth="250.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Image/vente2.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="234.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="250.0" style="-fx-background-color: #999999;" text="Gestion de Vente" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="Panel_06" layoutX="1240.0" layoutY="-310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="250.0" style="-fx-background-color: TRANSPARENT;" styleClass="pane">
+         <children>
+            <ImageView fitHeight="234.0" fitWidth="250.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Image/exit.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="234.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="250.0" style="-fx-background-color: #00ff7f;" text="Exit (Close)" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <MediaView fx:id="MediaView2" blendMode="MULTIPLY" fitHeight="260.0" fitWidth="1490.0" preserveRatio="false" smooth="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ImageView fx:id="menu_image" fitHeight="57.0" fitWidth="64.0" layoutX="58.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="690.0" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="1375.0" AnchorPane.topAnchor="46.0">
+         <image>
+            <Image url="@../Image/icons8_menu_96px_2.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="menu_image2" fitHeight="57.0" fitWidth="64.0" layoutX="58.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Image/icons8_minus_96px.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="151.0" layoutY="26.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="306.0" text="SEMATPHONES" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Label>
+      <HBox layoutX="1070.0" layoutY="35.0" prefHeight="40.0" prefWidth="223.0">
+         <children>
+            <Label fx:id="Client" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="40.0" prefWidth="150.0" styleClass="Label" text="Client" textFill="WHITE">
+               <font>
+                  <Font name="Andalus" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="Fournisseur" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="40.0" prefWidth="150.0" styleClass="Label" text="Fournisseur " textFill="WHITE">
+               <font>
+                  <Font name="Andalus" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Label layoutX="457.0" layoutY="26.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="89.0" text="Vente" textFill="WHITE">
+         <font>
+            <Font name="Andalus" size="24.0" />
+         </font>
+      </Label>
+      <HBox layoutX="474.0" layoutY="892.0" prefHeight="51.0" prefWidth="1490.0" styleClass="pane_bas" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <children>
+            <Label alignment="CENTER" prefHeight="35.0" prefWidth="350.0" text="Getting Started" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="400.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="283.0" text="WELCOME FOR MY APPLICATION " textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="482.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

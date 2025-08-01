@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor_p" focusTraversable="true" prefHeight="755.0" prefWidth="1374.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="memoire_fin.Fentre_change">
+   <children>
+      <AnchorPane fx:id="anchor02" layoutY="43.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="705.0" prefWidth="1180.0" styleClass="background" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="136.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Separator layoutX="194.0" layoutY="395.0" prefHeight="3.0" prefWidth="793.0" AnchorPane.bottomAnchor="297.0" AnchorPane.leftAnchor="194.0" AnchorPane.rightAnchor="193.0" AnchorPane.topAnchor="395.0" />
+            <Label layoutX="63.0" layoutY="42.0" prefHeight="40.0" prefWidth="248.0" text="DISPLAY :" textFill="#c63e3e" underline="true">
+               <font>
+                  <Font name="Baskerville Old Face" size="33.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="size" labelFloat="true" layoutX="136.0" layoutY="120.0" prefHeight="44.0" prefWidth="291.0" promptText="Size :" />
+            <JFXComboBox fx:id="Ram" labelFloat="true" layoutX="688.0" layoutY="120.0" prefHeight="44.0" prefWidth="291.0" promptText="RAM :" />
+            <JFXTextField fx:id="cpu" labelFloat="true" layoutX="178.0" layoutY="290.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="343.0" promptText="CPU ">
+               <font>
+                  <Font name="Bernard MT Condensed" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXTextField>
+            <Label layoutX="63.0" layoutY="213.0" prefHeight="40.0" prefWidth="248.0" text="PLATFORM :" textFill="#c63e3e" underline="true">
+               <font>
+                  <Font name="Baskerville Old Face" size="33.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="os" labelFloat="true" layoutX="688.0" layoutY="291.0" prefHeight="44.0" prefWidth="291.0" promptText="OS :" />
+            <Label layoutX="63.0" layoutY="442.0" prefHeight="40.0" prefWidth="248.0" text="MEMORY :" textFill="#c63e3e" underline="true">
+               <font>
+                  <Font name="Baskerville Old Face" size="33.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="card_slot" labelFloat="true" layoutX="136.0" layoutY="520.0" prefHeight="44.0" prefWidth="291.0" promptText="Card slot :" />
+            <JFXComboBox fx:id="internal" labelFloat="true" layoutX="688.0" layoutY="520.0" prefHeight="44.0" prefWidth="291.0" promptText="Internal :" />
+            <HBox fx:id="CO2" layoutX="1070.0" layoutY="613.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="1061.0" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="613.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_right_96px_2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox fx:id="RO1" layoutX="990.0" layoutY="613.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_left_96px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <HBox fx:id="barretitre" layoutX="156.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="1218.0" styleClass="Barre" AnchorPane.bottomAnchor="705.0" AnchorPane.leftAnchor="136.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#Min" prefHeight="50.0" prefWidth="70.0" styleClass="BarreMin">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="100.0" layoutX="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_minus_math_96px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets left="1094.0" />
+               </HBox.margin>
+            </Pane>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#Exit" prefHeight="50.0" prefWidth="70.0" styleClass="BarreExit">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_delete_sign_96px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Pane>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="anchor01" layoutX="11.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="705.0" prefWidth="1246.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="136.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Label layoutX="124.0" layoutY="35.0" prefHeight="39.0" prefWidth="264.0" text="Basic Detail">
+               <font>
+                  <Font name="Baskerville Old Face" size="43.0" />
+               </font>
+            </Label>
+            <Separator layoutX="124.0" layoutY="104.0" prefHeight="3.0" prefWidth="899.0" />
+            <JFXComboBox fx:id="marque" labelFloat="true" layoutX="121.0" layoutY="168.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="343.0" promptText="Marque :" visible="false" />
+            <JFXComboBox fx:id="appareil" labelFloat="true" layoutX="695.0" layoutY="212.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="343.0" promptText="Appareil :" visible="false" />
+            <JFXTextField fx:id="modele" labelFloat="true" layoutX="718.0" layoutY="168.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="343.0" promptText="Modéle">
+               <font>
+                  <Font name="Bernard MT Condensed" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="quantite" labelFloat="true" layoutX="124.0" layoutY="303.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="156.0" promptText="Quantité ">
+               <font>
+                  <Font name="Bernard MT Condensed" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="prix" labelFloat="true" layoutX="718.0" layoutY="303.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="198.0" promptText="Prix">
+               <font>
+                  <Font name="Bernard MT Condensed" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXTextField>
+            <Label fx:id="prix_2" focusTraversable="false" layoutX="885.0" layoutY="303.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="63.0" text=".00">
+               <font>
+                  <Font name="Bernard MT Condensed" size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutX="253.0" layoutY="401.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1.0" prefWidth="702.0" />
+            <Label layoutX="54.0" layoutY="418.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="248.0" text="BODY :" textFill="#c63e3e" underline="true">
+               <font>
+                  <Font name="Baskerville Old Face" size="33.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="weight" labelFloat="true" layoutX="154.0" layoutY="488.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="236.0" promptText="Weight  ">
+               <font>
+                  <Font name="Bernard MT Condensed" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXComboBox fx:id="build" labelFloat="true" layoutX="667.0" layoutY="488.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="343.0" promptText="Build :" />
+            <JFXComboBox fx:id="sim_size" labelFloat="true" layoutX="154.0" layoutY="591.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="180.0" promptText="Sim-Size :" />
+            <JFXComboBox fx:id="sim_multiply" labelFloat="true" layoutX="350.0" layoutY="591.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="180.0" promptText="SiM-Multiply :" />
+            <StackPane fx:id="Retour" layoutX="29.0" layoutY="36.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_left_96px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <JFXTextField fx:id="id" focusTraversable="false" labelFloat="true" layoutX="124.0" layoutY="168.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="73.0" promptText="ID" AnchorPane.bottomAnchor="493.0" AnchorPane.leftAnchor="124.0" AnchorPane.rightAnchor="983.0" AnchorPane.topAnchor="168.0">
+               <font>
+                  <Font name="Bernard MT Condensed" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXButton fx:id="RESET" focusTraversable="false" layoutX="820.0" layoutY="613.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="139.0" styleClass="Button_reset" text="Reset All">
+               <font>
+                  <Font name="Baskerville Old Face" size="24.0" />
+               </font>
+            </JFXButton>
+            <HBox fx:id="CO1" layoutX="1070.0" layoutY="613.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="1061.0" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="613.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_right_96px_2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <StackPane fx:id="visible" layoutX="990.0" layoutY="173.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="55.0">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_visible_100px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <StackPane fx:id="invisible" layoutX="990.0" layoutY="173.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="55.0" visible="false">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_invisible_100px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchor03" layoutX="197.0" layoutY="51.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="705.0" prefWidth="984.0" styleClass="background" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="136.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Label layoutX="646.0" layoutY="35.0" prefHeight="38.0" prefWidth="198.0" underline="true">
+               <font>
+                  <Font name="Baskerville Old Face" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="62.0" prefHeight="40.0" prefWidth="248.0" text="COMMS :" textFill="#c63e3e" underline="true">
+               <font>
+                  <Font name="Baskerville Old Face" size="33.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="notch" labelFloat="true" layoutX="95.0" layoutY="140.0" prefHeight="44.0" prefWidth="213.0" promptText="Notch :" />
+            <JFXComboBox fx:id="nfc" labelFloat="true" layoutX="484.0" layoutY="140.0" prefHeight="44.0" prefWidth="213.0" promptText="NFC :" />
+            <JFXComboBox fx:id="empeint" labelFloat="true" layoutX="865.0" layoutY="140.0" prefHeight="44.0" prefWidth="213.0" promptText="Emprint :" />
+            <JFXComboBox fx:id="gps" labelFloat="true" layoutX="95.0" layoutY="244.0" prefHeight="44.0" prefWidth="213.0" promptText="GPS :" />
+            <JFXComboBox fx:id="bluetooth" labelFloat="true" layoutX="484.0" layoutY="244.0" prefHeight="44.0" prefWidth="213.0" promptText="Bluetooth :" />
+            <JFXComboBox fx:id="serie_bluetooth" labelFloat="true" layoutX="865.0" layoutY="244.0" prefHeight="44.0" prefWidth="213.0" promptText="Serie-Bluetooth :" visible="false" />
+            <Separator layoutX="221.0" layoutY="359.0" prefHeight="3.0" prefWidth="793.0" />
+            <Label layoutX="41.0" layoutY="381.0" prefHeight="40.0" prefWidth="248.0" text="NETWORK :" textFill="#c63e3e" underline="true">
+               <font>
+                  <Font name="Baskerville Old Face" size="33.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="technology" labelFloat="true" layoutX="114.0" layoutY="459.0" prefHeight="44.0" prefWidth="213.0" promptText="Technology :" />
+            <Label layoutX="41.0" layoutY="552.0" prefHeight="40.0" prefWidth="248.0" text="BATTERY :" textFill="#c63e3e" underline="true">
+               <font>
+                  <Font name="Baskerville Old Face" size="33.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="battery" labelFloat="true" layoutX="164.0" layoutY="620.0" prefHeight="44.0" prefWidth="168.0" promptText="Size Battery ">
+               <font>
+                  <Font name="Bernard MT Condensed" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="battery2" focusTraversable="false" layoutX="331.0" layoutY="624.0" prefHeight="40.0" prefWidth="46.0" text="mAh">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font></JFXTextField>
+            <HBox fx:id="CO3" layoutX="1070.0" layoutY="613.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_right_96px_2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox fx:id="RO2" layoutX="990.0" layoutY="613.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_left_96px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchor04" layoutY="55.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="705.0" prefWidth="1180.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="136.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Separator layoutX="291.0" layoutY="401.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1.0" prefWidth="702.0" AnchorPane.bottomAnchor="291.0" AnchorPane.leftAnchor="291.0" AnchorPane.rightAnchor="187.0" AnchorPane.topAnchor="401.0" />
+            <Label layoutX="61.0" layoutY="47.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="248.0" text="MAIN CAMERA :" textFill="#c63e3e" underline="true" AnchorPane.bottomAnchor="608.0" AnchorPane.leftAnchor="61.0" AnchorPane.rightAnchor="871.0" AnchorPane.topAnchor="47.0">
+               <font>
+                  <Font name="Baskerville Old Face" size="27.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="rearcamera" labelFloat="true" layoutX="94.0" layoutY="135.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="156.0" promptText="Rear camera :">
+               <font>
+                  <Font name="Bernard MT Condensed" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField focusTraversable="false" labelFloat="true" layoutX="227.0" layoutY="135.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="46.0" promptText="MP">
+               <font>
+                  <Font name="Bernard MT Condensed" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="selfiecamera" labelFloat="true" layoutX="399.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="156.0" promptText="Selfie Camera :">
+               <font>
+                  <Font name="Bernard MT Condensed" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField focusTraversable="false" labelFloat="true" layoutX="532.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="46.0" promptText="MP">
+               <font>
+                  <Font name="Bernard MT Condensed" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXComboBox fx:id="flach" labelFloat="true" layoutX="860.0" layoutY="126.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="291.0" promptText="Flache :" AnchorPane.bottomAnchor="525.0" AnchorPane.leftAnchor="860.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="126.0" />
+            <Label layoutX="82.0" layoutY="225.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="248.0" text="MISC :" textFill="#c63e3e" underline="true" AnchorPane.bottomAnchor="430.0" AnchorPane.leftAnchor="82.0" AnchorPane.rightAnchor="850.0" AnchorPane.topAnchor="225.0">
+               <font>
+                  <Font name="Baskerville Old Face" size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="758.0" layoutY="225.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="248.0" text="LAUNCH :" textFill="#c63e3e" underline="true" AnchorPane.bottomAnchor="430.0" AnchorPane.leftAnchor="758.0" AnchorPane.rightAnchor="174.0" AnchorPane.topAnchor="225.0">
+               <font>
+                  <Font name="Baskerville Old Face" size="33.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="colors" labelFloat="true" layoutX="117.0" layoutY="309.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="291.0" promptText="Colors :">
+               <font>
+                  <Font name="Bernard MT Condensed" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="year" labelFloat="true" layoutX="796.0" layoutY="309.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="128.0" promptText="YEAR">
+               <font>
+                  <Font name="Bernard MT Condensed" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXButton fx:id="insert" buttonType="RAISED" layoutX="985.0" layoutY="591.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#Insert" prefHeight="61.0" prefWidth="145.0" styleClass="Button" text="Insert" visible="false" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="985.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="591.0">
+               <font>
+                  <Font name="Baskerville Old Face" size="24.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#da2f2f" />
+                        <Stop color="#19e4aa" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXButton fx:id="delete" layoutX="985.0" layoutY="591.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#Delete" prefHeight="61.0" prefWidth="145.0" ripplerFill="#55efc4" styleClass="Button" text="Delete" visible="false">
+               <font>
+                  <Font name="Baskerville Old Face" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="update" layoutX="985.0" layoutY="591.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#Update" prefHeight="61.0" prefWidth="145.0" ripplerFill="#55efc4" styleClass="Button" text="Update " visible="false" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="985.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="591.0">
+               <font>
+                  <Font name="Baskerville Old Face" size="24.0" />
+               </font>
+            </JFXButton>
+            <HBox fx:id="RO3" layoutX="990.0" layoutY="613.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="990.0" AnchorPane.rightAnchor="143.0" AnchorPane.topAnchor="613.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_left_96px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Label layoutX="63.0" layoutY="431.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="248.0" text="IMAGE :" textFill="#c63e3e" underline="true">
+               <font>
+                  <Font name="Baskerville Old Face" size="33.0" />
+               </font>
+            </Label>
+            <Button fx:id="addbutton" layoutX="165.0" layoutY="549.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="100.0" fitWidth="100.0">
+                     <image>
+                        <Image url="@../Photo/icons8_add_100px_4.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Pane fx:id="pane1" layoutX="933.0" layoutY="-310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="250.0" style="-fx-background-color: TRANSPARENT;">
+         <children>
+            <ImageView fitHeight="234.0" fitWidth="250.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Image/vente2.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="234.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="250.0" style="-fx-background-color: #999999;" text="INSERT" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" />
+         </effect>
+      </Pane>
+      <Pane fx:id="pane2" layoutX="933.0" layoutY="-310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="250.0" style="-fx-background-color: TRANSPARENT;">
+         <children>
+            <ImageView fitHeight="234.0" fitWidth="250.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Image/graphicstock-man-use-smartphone-handtouch-screenproject-manager-researching-processglobal-strategy-virtual-iconinnovation-graphs-interfaceanalyze-market-stock_rOgxKjswgse_SB_PM.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="234.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="250.0" style="-fx-background-color: #cce1e9;" text="UPDATE" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" />
+         </effect>
+      </Pane>
+      <Pane fx:id="Pane3" layoutX="933.0" layoutY="-310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="250.0" style="-fx-background-color: TRANSPARENT;">
+         <children>
+            <ImageView fitHeight="234.0" fitWidth="250.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Image/G10234-ST.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="234.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="250.0" style="-fx-background-color: #bcc5d5;" text="DELETE" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" />
+         </effect>
+      </Pane>
+      <StackPane fx:id="stackpane" layoutX="342.0" layoutY="152.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" visible="false">
+         <children>
+            <ImageView fx:id="lbl_appareil" fitHeight="500.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" styleClass="image_view">
+               <image>
+                  <Image url="@../Photo/ajouter.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow height="55.21" radius="27.105" width="55.21" />
+         </effect>
+      </StackPane>
+      <Button fx:id="bttnadd" layoutX="863.0" layoutY="582.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: TRANSPARENT;" visible="false">
+         <graphic>
+            <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Photo/icons8_plus_100px_4.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="820.0" prefWidth="136.0" styleClass="vbox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="52.0" prefWidth="134.0" text="SAMSUNG" textFill="WHITE">
+                     <font>
+                        <Font name="Agency FB" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox>
+               <children>
+                  <Button fx:id="Home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="60.0" prefWidth="136.0" style="-fx-background-color: TRANSPARENT;" text="Home" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Photo/icons8_home_64px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="-7.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="User" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="60.0" prefWidth="136.0" style="-fx-background-color: TRANSPARENT;" text="User" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Photo/icons8_contacts_64px_2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="-21.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="Stock" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="60.0" prefWidth="136.0" style="-fx-background-color: TRANSPARENT;" text="Stock" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Photo/icons8_box_96px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="-18.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="Update" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="60.0" prefWidth="136.0" style="-fx-background-color: TRANSPARENT;" text="Update" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Photo/icons8_update_tag_100px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="-7.0" />
+                     </padding>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="250.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+      <Polyline blendMode="COLOR_BURN" cache="true" disable="true" fill="#cfcfda" layoutX="611.0" layoutY="368.0" points="771.0, -368.0, 771.0, -107.0, -462.5, 260.0, -611.0, -368.0" stroke="WHITE" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>

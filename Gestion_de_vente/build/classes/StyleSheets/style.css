@@ -1,0 +1,44 @@
+#pane1{
+    -fx-background-color:#ffffff67;
+    -fx-background-radius: 40px;
+    -fx-border-radius: 20px;    
+}
+#btn1{
+    -fx-background-color: #7ebea5;
+    -fx-background-radius: 40px;
+    -fx-border-radius: 40px;
+}
+#btn1:pressed{
+    -fx-rotate: 5 }
+#user1{
+    -fx-font: 25 serif ;
+    }
+#pass1{
+    -fx-font: 25 serif ;}
+
+#btn2{
+    -fx-background-color: #7ebea5;
+    -fx-background-radius: 40px;
+    -fx-border-radius: 40px;
+ }
+#btn3{
+   -fx-background-color: #7ebea5;
+    -fx-background-radius: 40px;
+    -fx-border-radius: 40px; 
+}
+
+
+
+
+.background{
+   -fx-background-color: #FFFFFF;
+   -fx-background-size: 100% 100%;
+}
+.image_profil{
+   -fx-background-image: url("/Image/samsung.jpg");
+   -fx-background-size: 100% 100%
+}
+
+
+
+

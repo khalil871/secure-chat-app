@@ -1,0 +1,28 @@
+.image_view{
+    -fx-border-color:#795548;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10
+}
+.Barre{
+    -fx-background-color: #ffffff;
+}
+.BarreExit:hover{
+    -fx-background-color: #EA2027;
+}
+.BarreMin:hover{
+    -fx-background-color: #b2bec3;
+}
+.root{
+    -fx-background-color: #ffffff;
+}
+
+.vbox{
+    -fx-background-color:  #ffffff; 
+}
+.button:hover{
+    -fx-border-color: #81ecec;
+    -fx-border-width: 0 0 0 3 ;
+}
+
+

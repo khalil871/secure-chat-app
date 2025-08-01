@@ -1,0 +1,75 @@
+.Barre{
+    -fx-background-color:#00a8ff;
+}
+.BarreExit:hover{
+    -fx-background-color: #EA2027;
+}
+.BarreMin:hover{
+    -fx-background-color: #b2bec3;
+}
+
+/* table design   */
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color:  #9a9999; 
+    
+}
+.table-view .column-header .label{
+   -fx-text-fill: white;
+   -fx-font-weight: bold; 
+   -fx-alignment: CENTER_LEFT;
+}
+.table-view .cell{
+   -fx-cell-size: 35;
+  -fx-alignment: center-left;
+  -fx-background-color: #29292D;
+  -fx-border-color: #29292D;
+  -fx-text-fill: lightgray;
+  -fx-alignment: CENTER_LEFT;
+   
+}
+.table-row-cell:selected {
+   -fx-background-color: whitesmoke; 
+   -fx-text-background-color:  #6622CC;
+   
+       
+}
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #6622CC,90%);
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+}
+/* table design   */
+
+.Search{
+    -fx-alignment: CENTER_LEFT;
+    -fx-background-radius: 40;
+    -fx-background-color: #ecf0f1;
+    -fx-border-radius: 40;
+}
+
+.vbox{
+    -fx-background-color: #ffffff;
+}
+.Button{
+    -fx-text-fill: #bdc3c7;
+}
+.Button:hover{
+    -fx-border-color: #0652DD;
+    
+    -fx-border-width: 0 0 0 3;
+}
+.root{
+    -fx-background-color: #f5f6fa;
+}
+
+
+
+    
+
+
+
+
+
+

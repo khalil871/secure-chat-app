@@ -1,0 +1,39 @@
+#pane_vente{
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+}
+#scroll{
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2;
+    -fx-background-radius: 20;
+    -fx-border-radius: 10;}
+#panel_change{
+    
+    -fx-background-color: #009999;
+}
+.pane_style{
+    -fx-background-radius: 0 0 70 70; 
+       -fx-border-radius: 0 0 40 40
+}
+.bar_haut{
+    -fx-background-color:rgba(191, 191, 191, 1);
+}
+.Button:hover{
+    -fx-background-color: rgba(218, 223, 225, 1);
+    -fx-background-radius: 5;
+    -fx-display-caret: true; 
+}
+
+.panel_question{
+    -fx-background-radius:50;
+    -fx-background-color: #848380;
+}
+
+
+
+
+
+ 
+

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="938.0" prefWidth="1327.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="memoire_fin.FenetreVente.Fenetre_vente">
+   <children>
+      <Pane fx:id="pane_v" layoutY="50.0" prefHeight="888.0" prefWidth="350.0" styleClass="panel">
+         <children>
+            <JFXButton fx:id="btn1" layoutX="198.0" layoutY="716.0" prefHeight="50.0" prefWidth="133.0" styleClass="Button" text="Filter" textFill="#171414" />
+            <JFXButton fx:id="btn3" layoutX="20.0" layoutY="716.0" prefHeight="50.0" prefWidth="133.0" styleClass="Button" text="Stock" textFill="#171414" />
+            <JFXTextField fx:id="brand" focusColor="#3498db" labelFloat="true" layoutX="20.0" layoutY="261.0" prefHeight="50.0" prefWidth="302.0" promptText="BRAND :" styleClass="field" unFocusColor="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="26.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </JFXTextField>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="141.0" prefHeight="50.0" prefWidth="302.0" text="CHOSIR YOUR PHONE DEVICE" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB" size="26.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="Ram" focusColor="#3498db" labelFloat="true" layoutX="20.0" layoutY="381.0" prefHeight="50.0" prefWidth="302.0" promptText="RAM :" styleClass="field" unFocusColor="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="26.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="annonced" focusColor="#3498db" labelFloat="true" layoutX="20.0" layoutY="496.0" prefHeight="50.0" prefWidth="302.0" promptText="ANNONCED :" styleClass="field" unFocusColor="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="26.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="stockage" focusColor="#3498db" labelFloat="true" layoutX="20.0" layoutY="611.0" prefHeight="50.0" prefWidth="302.0" promptText="STOCKAGE :" styleClass="field" unFocusColor="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="26.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </JFXTextField>
+            <JFXButton fx:id="btn2" layoutX="198.0" layoutY="716.0" prefHeight="50.0" prefWidth="133.0" styleClass="Button" text="Filter" textFill="#171414" visible="false" />
+         </children>
+      </Pane>
+      <HBox fx:id="barretitre" layoutX="16.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="1327.0" styleClass="Barre" AnchorPane.bottomAnchor="888.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="213.0" text="VENTE" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_registry_editor_100px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <Pane fx:id="Min" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="70.0" styleClass="BarreMin">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="100.0" layoutX="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_minus_math_96px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets left="964.0" />
+               </HBox.margin>
+            </Pane>
+            <Pane fx:id="Exit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="70.0" styleClass="BarreExit">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_delete_sign_96px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Pane>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="ANCHOR" layoutX="518.0" layoutY="255.0" prefHeight="269.0" prefWidth="420.0" styleClass="ANCHOR" visible="false">
+         <children>
+            <JFXTextField fx:id="TVA" labelFloat="true" layoutX="110.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" promptText="ENTER YOUR TVA ">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXButton fx:id="change" layoutX="249.0" layoutY="193.0" prefHeight="50.0" prefWidth="114.0" text="CHANGE">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <HBox fx:id="Exit_Anchor" layoutX="356.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="BarreExit">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_delete_sign_96px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Fentre1" layoutX="350.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="888.0" prefWidth="977.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <JFXDatePicker fx:id="DATE" defaultColor="BLUE" layoutX="582.0" layoutY="80.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="302.0" promptText="Date">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXDatePicker>
+            <JFXTextField fx:id="client" focusColor="BLUE" labelFloat="true" layoutX="39.0" layoutY="180.0" prefHeight="50.0" prefWidth="363.0" promptText="Client ">
+               <font>
+                  <Font name="Bell MT Bold" size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="quantite" focusColor="BLUE" labelFloat="true" layoutX="46.0" layoutY="301.0" onKeyPressed="#Calcule" prefHeight="50.0" prefWidth="250.0" promptText="Quantité">
+               <font>
+                  <Font name="Bell MT Bold" size="25.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="pu" focusColor="BLUE" labelFloat="true" layoutX="374.0" layoutY="301.0" onKeyPressed="#Calcule" prefHeight="50.0" prefWidth="208.0" promptText="Prix .U">
+               <font>
+                  <Font name="Bell MT Bold" size="25.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="vergul1" focusColor="BLUE" focusTraversable="false" labelFloat="true" layoutX="582.0" layoutY="301.0" prefHeight="50.0" prefWidth="50.0" text=",00">
+               <font>
+                  <Font name="Bell MT Bold" size="25.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="totale" focusColor="BLUE" focusTraversable="false" labelFloat="true" layoutX="541.0" layoutY="681.0" prefHeight="84.0" prefWidth="273.0" promptText="Totale" styleClass="Label_Total">
+               <font>
+                  <Font name="Bell MT Bold" size="36.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="vergul2" focusColor="BLUE" focusTraversable="false" labelFloat="true" layoutX="814.0" layoutY="681.0" prefHeight="84.0" prefWidth="60.0" text=",00">
+               <font>
+                  <Font name="Bell MT Bold" size="36.0" />
+               </font>
+            </JFXTextField>
+            <Label fx:id="label_tva" alignment="CENTER_RIGHT" focusTraversable="false" layoutX="213.0" layoutY="698.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="60.0" text="20" textAlignment="CENTER">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <font>
+                  <Font name="Bell MT Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="Label_Question" focusTraversable="false" layoutX="142.0" layoutY="765.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="250.0" styleClass="hint" text="Are You Change TVA ?" textFill="#ff3f34" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="Bell MT Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <Label focusTraversable="false" layoutX="279.0" layoutY="698.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="35.0" text="\%">
+               <font>
+                  <Font name="Bell MT Bold" size="30.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="Ajoute" focusTraversable="false" layoutX="811.0" layoutY="800.0" prefHeight="57.0" prefWidth="146.0" ripplerFill="WHITE" styleClass="Button" text="Valider" textFill="#171414" />
+            <HBox fx:id="print" layoutX="47.0" layoutY="32.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="95.0" prefWidth="95.0" styleClass="image-view">
+               <children>
+                  <ImageView blendMode="MULTIPLY" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_print_100px_9.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <Label fx:id="nb" focusTraversable="false" layoutX="46.0" layoutY="661.0" prefHeight="40.0" prefWidth="50.0" text="5">
+               <font>
+                  <Font name="Bell MT Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+            <ImageView fx:id="IMageView" fitHeight="270.0" fitWidth="250.0" layoutX="692.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXListView fx:id="list1" focusTraversable="false" layoutX="46.0" layoutY="385.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="250.0" />
+            <JFXListView fx:id="list2" focusTraversable="false" layoutX="374.0" layoutY="385.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="250.0" />
+            <HBox fx:id="HBOXAchat" layoutX="769.0" layoutY="14.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="138.0" text="Facture Achat ">
+                     <font>
+                        <Font name="Agency FB" size="30.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="2.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ImageView fitHeight="50.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_right_96px_2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Label alignment="CENTER_RIGHT" layoutX="594.0" layoutY="180.0" prefHeight="50.0" prefWidth="95.0" text="Bon N°">
+               <font>
+                  <Font name="Bell MT Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="bon" alignment="CENTER_RIGHT" layoutX="722.0" layoutY="173.0" prefHeight="57.0" prefWidth="70.0">
+               <font>
+                  <Font name="Bell MT Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Fentre2" layoutX="350.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="830.0" prefWidth="976.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Label fx:id="nb1" layoutX="46.0" layoutY="661.0" prefHeight="40.0" prefWidth="50.0" text="5">
+               <font>
+                  <Font name="Agency FB" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+            <JFXDatePicker fx:id="DATE1" defaultColor="BLUE" layoutX="582.0" layoutY="80.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="302.0" promptText="Date">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXDatePicker>
+            <JFXTextField fx:id="client1" focusColor="BLUE" labelFloat="true" layoutX="39.0" layoutY="180.0" onKeyPressed="#Calcule" prefHeight="50.0" prefWidth="363.0" promptText="Fournisseur">
+               <font>
+                  <Font name="Calibri Bold Italic" size="22.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="quantite1" focusColor="BLUE" labelFloat="true" layoutX="46.0" layoutY="301.0" onKeyPressed="#CalculeAchat" prefHeight="50.0" prefWidth="250.0" promptText="Quantité">
+               <font>
+                  <Font name="Calibri Bold Italic" size="22.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="pu1" focusColor="BLUE" labelFloat="true" layoutX="374.0" layoutY="301.0" onKeyPressed="#CalculeAchat" prefHeight="50.0" prefWidth="208.0" promptText="Prix .U">
+               <font>
+                  <Font name="Calibri Bold Italic" size="22.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="vergul11" focusColor="BLUE" labelFloat="true" layoutX="582.0" layoutY="301.0" prefHeight="50.0" prefWidth="29.0" text=",00">
+               <font>
+                  <Font name="Calibri Bold Italic" size="22.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="totale1" focusColor="BLUE" labelFloat="true" layoutX="541.0" layoutY="715.0" prefHeight="50.0" prefWidth="273.0" promptText="Totale" AnchorPane.bottomAnchor="123.0" AnchorPane.leftAnchor="541.0" AnchorPane.rightAnchor="163.0" AnchorPane.topAnchor="715.0">
+               <font>
+                  <Font name="Calibri Bold Italic" size="22.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="vergul21" focusColor="BLUE" labelFloat="true" layoutX="814.0" layoutY="715.0" prefHeight="50.0" prefWidth="29.0" text=",00" AnchorPane.bottomAnchor="123.0" AnchorPane.rightAnchor="163.0" AnchorPane.topAnchor="715.0">
+               <font>
+                  <Font name="Calibri Bold Italic" size="22.0" />
+               </font>
+            </JFXTextField>
+            <Label fx:id="label_tva1" alignment="CENTER_RIGHT" layoutX="213.0" layoutY="698.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="60.0" text="20" textAlignment="CENTER">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="Label_Question1" layoutX="186.0" layoutY="776.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="23.0" prefWidth="175.0" styleClass="hint" text="Are You Change TVA ?" textFill="#ff3f34" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <Label layoutX="279.0" layoutY="698.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="35.0" text="\%">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="nb1" alignment="CENTER_RIGHT" layoutY="413.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="80.0" textAlignment="CENTER">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="Ajoute1" layoutX="811.0" layoutY="800.0" prefHeight="57.0" prefWidth="146.0" ripplerFill="WHITE" styleClass="Button" text="Valider" textFill="#171414" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="811.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="800.0" />
+            <HBox fx:id="print1" layoutX="47.0" layoutY="32.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="95.0" prefWidth="95.0" styleClass="image-view">
+               <children>
+                  <ImageView blendMode="MULTIPLY" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_print_100px_9.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <JFXListView fx:id="list11" focusTraversable="false" layoutX="46.0" layoutY="385.0" prefHeight="270.0" prefWidth="250.0" />
+            <JFXListView fx:id="list21" focusTraversable="false" layoutX="374.0" layoutY="385.0" prefHeight="270.0" prefWidth="250.0" />
+            <HBox fx:id="HBOXVente" layoutX="769.0" layoutY="14.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/icons8_left_96px_1.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="138.0" text="Vente ">
+                     <font>
+                        <Font name="Agency FB" size="30.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="2.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <ImageView fx:id="IMageView1" fitHeight="270.0" fitWidth="250.0" layoutX="692.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
