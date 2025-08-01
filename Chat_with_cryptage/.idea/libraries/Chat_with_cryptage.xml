@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Chat_with_cryptage">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/Chat_with_cryptage.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
